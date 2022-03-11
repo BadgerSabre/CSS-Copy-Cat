@@ -1,3 +1,36 @@
-.card {
-    background-color: orange;
+/*main content*/
+#intro-card {
+    background-image: linear-gradient(to left, #dbfbe3, #e0f5ff);
+    margin-top: 2em;
+}
+.feed-title {
+    padding: 3em 0 1em 0;
+    font-weight: 300;
+}
+#second-window-content {
+    display: flex;
+    justify-content: flex-end;
+}
+.btn {
+    border-radius: 10px;
+}
+#dismiss-link {
+    text-decoration: none;
+    margin: .5em 1.5em 0 0;
+}
+.btn-success {
+    background-color: #2ea44e;
+}
+#readme-list {
+    background-color: #f6f8fa;
+    font-family:'Courier New', Courier, monospace;
+}
+ul {
+    list-style-type: none;
+    font-size: .9em;
+}
+#readme-title {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 1.5em;
+    font-size: .9em;
 }
