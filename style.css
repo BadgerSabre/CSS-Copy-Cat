@@ -54,9 +54,17 @@ ul {
 }
 #explore-btn:hover {
     background-color: #0d6efd;
+    text-decoration: none;
     color: white !important;
 }
+/*footer and trademark*/
+#footer-trademark {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: start;
+    font-size: .8em;
+}
 footer {
-    margin: 0;
-    padding: 0;
+    flex-grow: 2;
+    padding-left: 10em;
 }
