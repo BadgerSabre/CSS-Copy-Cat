@@ -1,22 +1,36 @@
 /*main content*/
+.container {
+    background: #f6f8fa;
+    padding: 1em 0 4em 3em;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
 #intro-card {
     background-image: linear-gradient(to left, #dbfbe3, #e0f5ff);
     margin-top: 2em;
 }
 .feed-title {
-    padding: 3em 0 1em 0;
+    padding: 2em 0 1em 0;
     font-weight: 300;
 }
 #second-window-content {
     display: flex;
     justify-content: flex-end;
+    font-size: .8em;
 }
 .btn {
     border-radius: 10px;
 }
 #dismiss-link {
     text-decoration: none;
-    margin: .5em 1.5em 0 0;
+    margin: 1em 1.5em 0 0;
+}
+#dismiss-link:hover {
+    text-decoration: underline;
 }
 .btn-success {
     background-color: #2ea44e;
@@ -33,4 +47,16 @@ ul {
     font-family: Arial, Helvetica, sans-serif;
     margin-top: 1.5em;
     font-size: .9em;
+}
+#explore-btn {
+    background-color: #f6f8fa;
+    border-color: lightgrey;
+}
+#explore-btn:hover {
+    background-color: #0d6efd;
+    color: white !important;
+}
+footer {
+    margin: 0;
+    padding: 0;
 }
