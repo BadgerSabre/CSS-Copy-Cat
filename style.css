@@ -8,8 +8,33 @@ aside {
     max-width: 30vh;
     margin: 0;
 }
+.repository-list-item {
+    margin-top: .5em;
+}
 .repository-link {
     color: #6e7781;
+}
+.repository-link:hover {
+    color: #6e7781;
+}
+#repository-search {
+    margin-left: 2em;
+    margin-top: .5em;
+}
+#aside-title {
+    display: flex;
+    justify-content: space-between;
+    margin: 1em .5em 1em .5em;
+}
+#recent-repositories-title {
+    margin-left: 1.5em;
+}
+hr {
+    margin: 0 1.5em;
+}
+#aside-note {
+    font-size: .8em;
+    margin: 1em 1em 1em 2em;
 }
 /*main content*/
 main {
