@@ -1,7 +1,29 @@
+/*Aside*/
+.aside-btn {
+    padding: .2em .8em .2em .8em;
+}
+aside {
+    border: 1px solid black;
+    flex-grow: 1;
+    max-width: 30vh;
+    margin: 0;
+}
+.repository-link {
+    color: #6e7781;
+}
 /*main content*/
+main {
+    display:flex;
+    justify-content: left;
+    padding: 0;
+    margin: 0;
+}
 .container {
     background: #f6f8fa;
     padding: 1em 0 4em 3em;
+    border: 1px solid black;
+    margin:0;
+    flex-grow: 4;
 }
 a {
     text-decoration: none;
@@ -11,7 +33,7 @@ a:hover {
 }
 #intro-card {
     background-image: linear-gradient(to left, #dbfbe3, #e0f5ff);
-    margin-top: 2em;
+    margin-top: .7em;
 }
 .feed-title {
     padding: 2em 0 1em 0;
@@ -63,8 +85,12 @@ ul {
     flex-direction: row-reverse;
     justify-content: start;
     font-size: .8em;
+    color: #6e7781;
 }
 footer {
     flex-grow: 2;
     padding-left: 10em;
+}
+.footer-link {
+    color: #6e7781;
 }

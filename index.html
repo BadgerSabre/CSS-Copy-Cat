@@ -20,7 +20,7 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <form class="d-flex">
-                  <input class="form-control me-2 bg-dark" type="search" placeholder="Search" aria-label="Search">
+                  <input class="form-control me-2 bg-dark" type="search" placeholder="Search or jump to..." aria-label="Search">
                   <button class="btn btn-outline-light" type="submit">/</button>
                 </form>
                 <li class="nav-item">
@@ -50,108 +50,131 @@
           </div>
         </div>
     </nav>
-    <div class="container container-fluid">
-        <div id="intro-card" class="card" style="width: 60rem;">
-            <div class="card-body">
-              <h5 class="card-title mb-3">Learn Git and GitHub without any code!</h5>
-              <h6 class="card-subtitle mb-4 text-muted">Using the Hello World guide, you'll create a respository, start a branch, write comments, and open a pull request.</h6>
-              <button type="button" class="btn btn-success">Read the guide</button>
-              <button type="button" class="btn btn-light">Start a project</button>
-            </div>
-          </div>
-        <h5 class="feed-title">All activity</h5>
-          <div class="card" style="width: 60rem;">
-            <div class="card-body">
-              <h5 class="card-title">Introduce Yourself</h5>
-              <h6 class="card-subtitle mb-2 text-muted">The easiest way to introduce yourself on GitHub is by creating a README in a repository about you! You can start here:</h6>
-              <div class="card" style="width: 58rem;">
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item" id="readme-title"><p>BadgerSabre/README.md</li>
-                  <li class="list-group-item" id="readme-list">
-                      <ul>
-                          <li>1 - 👋 Hi, I'm @BadgerSabre</li>
-                          <li>2 - 👀 I'm interested in ...</li>
-                          <li>3 - 🌱 I'm currently learning ...</li>
-                          <li>4 - 💞 I'm looking to collaborate on ...</li>
-                          <li>5 - 📫 How to reach me ...</li>
-                          <li>6</li>
-                      </ol>
-                  </li>
-                </ul>
+    <main>
+        <aside>
+            <h6>Recent Repositories</h6>
+            <button type="button" class="btn btn-success aside-btn"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-journal-bookmark-fill" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M6 1h6v7a.5.5 0 0 1-.757.429L9 7.083 6.757 8.43A.5.5 0 0 1 6 8V1z"/>
+                <path d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2z"/>
+                <path d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1z"/>
+              </svg> New</button>
+              <input class="form-control me-2 bg-light" type="search" placeholder="Find a respository" aria-label="Search">
+              <ul id="repository-link-list">
+                  <li><a class="repository-link" href="#">BadgerSabre/Custom-Adventure</a></li>
+                  <li><a class="repository-link" href="#">BadgerSabre/CSS-Copy-Cat</a></li>
+                  <li><a class="repository-link" href="#">BadgerSabre/Valentine-s-Day</a></li>
+                  <li><a class="repository-link" href="#">BadgerSabre/Profile</a></li>
+                  <li><a class="repository-link" href="#">BadgerSabre/Microsoft-Layout</a></li>
+                  <li><a class="repository-link" href="#">BadgerSabre/FCC-Survey-Form</a></li>
+                  <li><a class="repository-link" href="#">BadgerSabre/group-project</a></li>
+              </ul>
+        </aside>
+        <div class="container container-fluid">
+            <div id="intro-card" class="card" style="width: 60rem;">
+                <div class="card-body">
+                  <h5 class="card-title mb-3">Learn Git and GitHub without any code!</h5>
+                  <h6 class="card-subtitle mb-4 text-muted">Using the Hello World guide, you'll create a respository, start a branch, write comments, and open a pull request.</h6>
+                  <button type="button" class="btn btn-success">Read the guide</button>
+                  <button type="button" class="btn btn-light">Start a project</button>
+                </div>
               </div>
-              <div id="second-window-content">
-                  <a href="#" id="dismiss-link">Dismiss this</a>
-                  <button type="button" class="btn btn-success mt-1">Continue</button>
-              </div>
-            </div>
-          </div>
-          <div class="card mt-3" style="width: 60rem;">
-            <div class="card-body">
-              <h5 class="card-title h4">Discover interesting projects and people to populate your personal news feed.</h5>
-              <p class="card-text">Your news feed helps you keep up with recent activity on repositories you <a href="#">watch</a> or <a href="#">star</a> and people you <a href="#">follow</a>.</p>
-              <a href="#" id="explore-btn" class="btn btn-primary text-primary">Explore GitHub</a>
-            </div>
-          </div>
-        <div id="footer-trademark">
-            <footer class="bg-light text-center text-lg-start">
-              <div id="footer-container" class="container container-fluid p-4">
-                <div class="row">
-                  <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                    <ul class="list-unstyled mb-0">
-                      <li>
-                        <a href="#!" class="text-dark">Blog</a>
-                      </li>
-                      <li>
-                        <a href="#!" class="text-dark">About</a>
-                      </li>
-                      <li>
-                        <a href="#!" class="text-dark">Shop</a>
-                      </li>
-                      <li>
-                        <a href="#!" class="text-dark">Contact GitHub</a>
-                      </li>
-                      <li>
-                          <a href="#!" class="text-dark">Pricing</a>
+            <h5 class="feed-title">All activity</h5>
+              <div class="card" style="width: 60rem;">
+                <div class="card-body">
+                  <h5 class="card-title">Introduce Yourself</h5>
+                  <h6 class="card-subtitle mb-2 text-muted">The easiest way to introduce yourself on GitHub is by creating a README in a repository about you! You can start here:</h6>
+                  <div class="card" style="width: 58rem;">
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item" id="readme-title"><p>BadgerSabre/README.md</li>
+                      <li class="list-group-item" id="readme-list">
+                          <ul>
+                              <li>1 - 👋 Hi, I'm @BadgerSabre</li>
+                              <li>2 - 👀 I'm interested in ...</li>
+                              <li>3 - 🌱 I'm currently learning ...</li>
+                              <li>4 - 💞 I'm looking to collaborate on ...</li>
+                              <li>5 - 📫 How to reach me ...</li>
+                              <li>6</li>
+                          </ol>
                       </li>
                     </ul>
                   </div>
-                  <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                    <ul class="list-unstyled">
-                      <li>
-                        <a href="#!" class="text-dark">API</a>
-                      </li>
-                      <li>
-                        <a href="#!" class="text-dark">Training</a>
-                      </li>
-                      <li>
-                        <a href="#!" class="text-dark">Status</a>
-                      </li>
-                      <li>
-                        <a href="#!" class="text-dark">Security</a>
-                      </li>
-                    </ul>
+                  <div id="second-window-content">
+                      <a href="#" id="dismiss-link">Dismiss this</a>
+                      <button type="button" class="btn btn-success mt-1">Continue</button>
                   </div>
-                  <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                    <ul class="list-unstyled mb-0">
-                      <li>
-                        <a href="#!" class="text-dark">Terms</a>
-                      </li>
-                      <li>
-                        <a href="#!" class="text-dark">Privacy</a>
-                      </li>
-                      <li>
-                        <a href="#!" class="text-dark">Docs</a>
-                      </li>
-                    </ul>
-                  </div>
+                </div>
               </div>
-          </footer>
-          <div class="text-center p-3">
-            © 2022 Copyright:
-            <a class="text-dark" href="#">Github, Inc.</a>
-          </div>
+              <div class="card mt-3" style="width: 60rem;">
+                <div class="card-body">
+                  <h5 class="card-title h4">Discover interesting projects and people to populate your personal news feed.</h5>
+                  <p class="card-text">Your news feed helps you keep up with recent activity on repositories you <a href="#">watch</a> or <a href="#">star</a> and people you <a href="#">follow</a>.</p>
+                  <a href="#" id="explore-btn" class="btn btn-primary text-primary">Explore GitHub</a>
+                </div>
+              </div>
+            <div id="footer-trademark">
+                <footer class="bg-light text-center text-lg-start">
+                  <div id="footer-container" class="container container-fluid p-4">
+                    <div class="row">
+                      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                        <ul class="list-unstyled mb-0">
+                          <li>
+                            <a href="#!" class="footer-link" class="text-dark">Blog</a>
+                          </li>
+                          <li>
+                            <a href="#!" class="footer-link" class="text-dark">About</a>
+                          </li>
+                          <li>
+                            <a href="#!" class="footer-link" class="text-dark">Shop</a>
+                          </li>
+                          <li>
+                            <a href="#!" class="footer-link" class="text-dark">Contact GitHub</a>
+                          </li>
+                          <li>
+                              <a href="#!" class="footer-link" class="text-dark">Pricing</a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                        <ul class="list-unstyled">
+                          <li>
+                            <a href="#!" class="footer-link" class="text-dark">API</a>
+                          </li>
+                          <li>
+                            <a href="#!" class="footer-link" class="text-dark">Training</a>
+                          </li>
+                          <li>
+                            <a href="#!" class="footer-link" class="text-dark">Status</a>
+                          </li>
+                          <li>
+                            <a href="#!" class="footer-link" class="text-dark">Security</a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                        <ul class="list-unstyled mb-0">
+                          <li>
+                            <a href="#!" class="footer-link" class="text-dark">Terms</a>
+                          </li>
+                          <li>
+                            <a href="#!" class="footer-link" class="text-dark">Privacy</a>
+                          </li>
+                          <li>
+                            <a href="#!" class="footer-link" class="text-dark">Docs</a>
+                          </li>
+                        </ul>
+                      </div>
+                  </div>
+              </footer>
+              <div class="text-center p-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                  </svg>
+                © 2022 Copyright:
+                <a class="footer-link" href="#">Github, Inc.</a>
+              </div>
+            </div>
         </div>
-    </div>
+    </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
